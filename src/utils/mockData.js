@@ -1,40 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header = () => {
-  return (
-    <div className="header">
-    <div className="logo-conatiner">
-      <img className="logo" src="https://static.vecteezy.com/system/resources/thumbnails/020/437/792/small/panda-logo-food-vector.jpg"></img>
-    </div>
-    <div className="Nav-items">
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li>Cart</li>
-      </ul>
-    </div>
-    </div>
-  );
-};
-
-const RestaurantCard = (props) => {
-  const { resData } = props;
-  const { name, cuisines, avgRating, costForTwo} = resData.info;
-  return (
-    <div className="res-card">
-      <img className="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+ resData.info.cloudinaryImageId }/>
-      <h3>{name}</h3>
-      <h4>Best in {cuisines.join(", ")}</h4>
-      <h4>{costForTwo} for two</h4>
-      <h4>{avgRating}⭐</h4>
-    </div>
-  );
-};
-
-
-const resList=[
+export const resList=[
                                     {
                                         "info": {
                                             "id": "10576",
@@ -1611,29 +1575,4 @@ const resList=[
                                         }
                                     }];
 
-
-const Body = () => {
-  return (
-    <div className="body">
-      <h2 className="menu-heading">Restaurant Menu</h2>
-      <div className="search">Search</div>
-      <div className="res-menu-container">
-        {resList.map((restaurant) => {
-          return <RestaurantCard key={restaurant.info.id} resData={restaurant} />;
-        })}
-      </div>
-    </div>
-  );
-};
-
-const Applayout = () => {
-  return (<div className="App">
-    <Header/>
-    <Body/>
-  </div>);
-};
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<Applayout/>);
+export default resList;

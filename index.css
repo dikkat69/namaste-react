@@ -119,3 +119,23 @@
     margin: 10px;
     align-items: center;
 }
+
+/* Ensure the button is clearly visible */
+.Filter-btn {
+  background-color: #007BFF; /* Bright blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Add some padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.Filter-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.filter-btn {
+  text-align: center; /* Center the button */
+  margin: 20px 0; /* Add some margin */
+}
