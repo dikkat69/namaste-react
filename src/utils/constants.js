@@ -3,4 +3,12 @@ export const LOGO_URL="https://static.vecteezy.com/system/resources/thumbnails/0
 
 export const CDN_URL="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
-export const RestaurantList_URL="https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.890739&lng=76.5801901&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+export const RestaurantList_URL_rtk="https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.890739&lng=76.5801901&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+
+export const RestaurantList_URL_ST="https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.2695241&lng=72.9576601&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+
+export const MENU_URL =
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true";
+
+export const DISH_IMG =
+  "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=500";

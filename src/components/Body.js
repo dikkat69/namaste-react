@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestauranrCard";
+import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -64,7 +64,7 @@ const Body = () => {
           className="px-5 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition"
           onClick={() => {
             const filtered = restaurantList.filter(
-              (res) => res.info.avgRating > 4.2
+              (res) => res.info.avgRating >= 4.5
             );
             setFilteredRestaurant(filtered);
           }}
