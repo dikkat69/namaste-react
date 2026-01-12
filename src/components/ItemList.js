@@ -1,6 +1,14 @@
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 import { DISH_IMG } from "../utils/constants";
 
-const ItemList = ({ items }) => {
+const ItemList = ({ items = [] }) => {
+  const dispatch = useDispatch();
+
+  const handleAddItem = (item) => {
+    dispatch(addItem(item));
+  };
+
   return (
     <div className="space-y-6">
       {items.map((item) => (
@@ -26,6 +34,7 @@ const ItemList = ({ items }) => {
             />
 
             <button
+              onClick={() => handleAddItem(item)}
               className="absolute -bottom-3 left-1/2 -translate-x-1/2
                          bg-white text-green-600 border border-gray-300
                          px-4 py-1 text-sm font-semibold rounded shadow-sm
