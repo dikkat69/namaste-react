@@ -26,7 +26,7 @@ const ItemList = ({ items = [] }) => {
           </div>
 
           {/* Right */}
-          <div className="relative w-28 h-24 flex-shrink-0">
+          <div className="relative w-28 h-24 shrink-0">
             <img
               src={DISH_IMG}
               alt={item.name}
